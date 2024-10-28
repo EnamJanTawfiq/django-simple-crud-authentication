@@ -13,6 +13,6 @@ class AuthorViewSet(viewsets.ModelViewSet):
     serializer_class = AuthorSerializer
 
 class BookViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated]
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    
